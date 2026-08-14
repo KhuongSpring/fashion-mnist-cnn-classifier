@@ -9,7 +9,8 @@ BTL_AI/
 ├── main.py                 # CLI: train + evaluate 1 model (mlp/cnn), lưu kết quả vào outputs/
 ├── requirements.txt
 ├── notebooks/
-│   └── Fashion_MNIST_CNN.ipynb   # Notebook self-contained, chạy trực tiếp trên Google Colab
+│   ├── Fashion_MNIST_CNN.ipynb           # Khung sườn: train + so sánh MLP/CNN, chạy trực tiếp trên Google Colab
+│   └── Fashion_MNIST_Experiments.ipynb   # Kế thừa khung sườn, bổ sung ablation study, error analysis, so sánh chi phí, feature maps (xem REPORT_GUIDE.md)
 ├── src/
 │   ├── config.py            # đường dẫn, hằng số, hyperparameter mặc định
 │   ├── data.py               # DataLoader + augmentation cho Fashion-MNIST

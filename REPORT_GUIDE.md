@@ -1,8 +1,10 @@
 # Hướng dẫn nâng cấp báo cáo (từ kết quả cơ bản → báo cáo có chiều sâu)
 
-Notebook `notebooks/Fashion_MNIST_CNN.ipynb` hiện đã cho ra: train MLP, train CNN, so sánh Accuracy/Precision/Recall/F1 + Confusion Matrix. Đây là **khung sườn**. Để báo cáo có chiều sâu — đúng tinh thần đề tài "áp dụng kỹ thuật cải thiện hiệu suất... hạn chế overfitting" — cần **chứng minh** từng kỹ thuật thực sự có tác dụng, không chỉ liệt kê là có dùng.
+Notebook `notebooks/Fashion_MNIST_CNN.ipynb` hiện đã cho ra: train MLP, train CNN, so sánh Accuracy/Precision/Recall/F1 + Confusion Matrix. Đây là **khung sườn** (giữ nguyên, không chỉnh sửa). Để báo cáo có chiều sâu — đúng tinh thần đề tài "áp dụng kỹ thuật cải thiện hiệu suất... hạn chế overfitting" — cần **chứng minh** từng kỹ thuật thực sự có tác dụng, không chỉ liệt kê là có dùng.
 
-Checklist bên dưới xếp theo độ ưu tiên. Làm tới đâu, tick tới đó.
+**Đã triển khai sẵn:** `notebooks/Fashion_MNIST_Experiments.ipynb` — notebook kế thừa khung sườn (copy nguyên mục 1-10), bổ sung đầy đủ 4 mục checklist bên dưới (mục 11-14 trong notebook), kèm biểu đồ trực quan và phần giải thích cách đọc từng biểu đồ cho người chưa biết về AI. Chạy notebook này trên Colab (Run all) là có đủ số liệu/biểu đồ để đưa vào báo cáo.
+
+Checklist bên dưới xếp theo độ ưu tiên, dùng để đối chiếu notebook đã làm đủ chưa, hoặc để tự làm thủ công nếu muốn.
 
 ---
 
@@ -126,5 +128,6 @@ plt.show()
 
 ## Ghi chú
 
-- Tất cả code mẫu ở trên viết để chèn thêm vào **cuối** `notebooks/Fashion_MNIST_CNN.ipynb` (sau mục 8 "So sánh CNN vs MLP"), tái sử dụng các biến đã có sẵn (`cnn_model`, `test_set`, `CLASS_NAMES`, `DEVICE`, `plt`...).
-- Nếu muốn mình code sẵn các phần này vào notebook thay vì tự làm, cứ nói — hiện tại để bạn tự follow theo checklist này trước.
+- Toàn bộ 4 mục checklist ở trên **đã được code sẵn** trong `notebooks/Fashion_MNIST_Experiments.ipynb` (mục 11-14 của notebook đó), kèm biểu đồ và phần giải thích cách đọc từng biểu đồ. Chỉ cần mở notebook đó và Run all.
+- Notebook gốc `Fashion_MNIST_CNN.ipynb` được giữ nguyên làm khung sườn, không bị chỉnh sửa.
+- Code mẫu trong checklist ở trên vẫn giữ lại để tham khảo logic nếu muốn tự tùy biến thêm thực nghiệm khác ngoài 4 mục đã có.
