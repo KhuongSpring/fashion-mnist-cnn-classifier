@@ -10,7 +10,8 @@ BTL_AI/
 ├── requirements.txt
 ├── notebooks/
 │   ├── Fashion_MNIST_CNN.ipynb           # Khung sườn: train + so sánh MLP/CNN, chạy trực tiếp trên Google Colab
-│   └── Fashion_MNIST_Experiments.ipynb   # Kế thừa khung sườn, bổ sung ablation study, error analysis, so sánh chi phí, feature maps (xem REPORT_GUIDE.md)
+│   ├── Fashion_MNIST_Experiments.ipynb   # Kế thừa khung sườn, bổ sung ablation study, error analysis, so sánh chi phí, feature maps (xem REPORT_GUIDE.md)
+│   └── Fashion_MNIST_Demo.ipynb          # Kế thừa khung sườn, bổ sung demo trực tiếp cho buổi vấn đáp (dự đoán ảnh ngẫu nhiên, upload ảnh thật)
 ├── src/
 │   ├── config.py            # đường dẫn, hằng số, hyperparameter mặc định
 │   ├── data.py               # DataLoader + augmentation cho Fashion-MNIST
@@ -64,6 +65,11 @@ Kết quả (checkpoint, biểu đồ, log) được lưu vào `outputs/`.
 ## Nâng cấp báo cáo
 
 Notebook hiện tại cho ra kết quả cơ bản (train + so sánh MLP/CNN). Để báo cáo có chiều sâu hơn (ablation study, phân tích lỗi sai, so sánh chi phí...), xem checklist chi tiết trong [`REPORT_GUIDE.md`](REPORT_GUIDE.md).
+
+## Chuẩn bị vấn đáp
+
+- `notebooks/Fashion_MNIST_Demo.ipynb` — demo trực tiếp: dự đoán ảnh ngẫu nhiên kèm biểu đồ độ tự tin, kiểm tra nhanh nhiều ảnh, upload ảnh chụp thật để mô hình đoán thử.
+- [`DEFENSE_QA.md`](DEFENSE_QA.md) — tài liệu hỏi-đáp dự phòng, gồm các câu hay bị hỏi khi vấn đáp kèm câu trả lời ngắn gọn, bám sát đúng cách triển khai trong đề tài này.
 
 ## Kiến trúc mô hình
 
